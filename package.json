@@ -1,0 +1,28 @@
+{
+  "name": "elastic-bulk-writable",
+  "version": "1.0.0",
+  "description": "expose elasticsearch Bulk as a writable stream",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nodeunit test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bimedia-fr/elastic-bulk-writable.git"
+  },
+  "keywords": [
+    "elasticsearch",
+    "bulk",
+    "writable",
+    "stream"
+  ],
+  "author": "jerome creignou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bimedia-fr/elastic-bulk-writable/issues"
+  },
+  "homepage": "https://github.com/bimedia-fr/elastic-bulk-writable#readme"
+}
