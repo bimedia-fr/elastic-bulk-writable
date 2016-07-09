@@ -11,8 +11,13 @@ Simple use case :
 
 ```js
 var BulkWritable = require('elastic-bulk-writable');
-var col; // get a collection object from driver
-var writable = new BulkWritable(col.initializeOrderedBulkOp(), function write(chunk, next) {
+var client; // get elastic client
+var opts = {
+  client: client,
+  index: 'myindex',
+  type: 'mytype'
+};
+var writable = new BulkWritable(opts, function write(chunk, next) {
   this.bulk.push({"index": {}});
   this.bulk.push(chunk);
   next();
