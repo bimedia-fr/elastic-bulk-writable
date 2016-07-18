@@ -28,5 +28,8 @@
   "devDependencies": {
     "event-stream": "^3.3.3",
     "nodeunit": "^0.9.1"
+  },
+  "dependencies": {
+    "flushwritable": "^1.0.0"
   }
 }
