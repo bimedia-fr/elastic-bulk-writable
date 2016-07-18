@@ -14,8 +14,8 @@ var BulkWritable = require('elastic-bulk-writable');
 var client; // get elastic client
 var opts = {
   client: client,
-  index: 'myindex',
-  type: 'mytype'
+  indexName: 'myindex',
+  indexType: 'mytype'
 };
 var writable = new BulkWritable(opts, function write(chunk, next) {
   this.bulk.push({"index": {}});
@@ -33,8 +33,8 @@ var BulkWritable = require('elastic-bulk-writable');
 var client; // get elastic client
 var opts = {
   client: client,
-  index: 'myindex',
-  type: 'mytype'
+  indexName: 'myindex',
+  indexType: 'mytype'
 };
 var writable = new BulkWritable(opts);
 readable.pipe(writable);
